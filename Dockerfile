@@ -11,4 +11,4 @@ RUN iruby register --force
 RUN mkdir notebooks
 WORKDIR notebooks
 
-ENTRYPOINT ["sh", "-c", "jupyter notebook -it --no-browser --allow-root --ip=0.0.0.0"]
+ENTRYPOINT ["sh", "-c", "jupyter notebook --no-browser --allow-root --ip=0.0.0.0"]
